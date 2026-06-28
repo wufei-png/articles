@@ -59,7 +59,7 @@ Goodhart's law 常被概括为：当一个度量变成目标，它就不再是�
 
 这个问题当然重要，但它不是组织层面最完整的问题。
 
-现实证据本身也不适合被简化成一句话。有些受控实验显示，代码助手能显著缩短特定任务完成时间；也有针对熟悉开源仓库的研究发现，早期 AI 工具在复杂真实任务里未必带来提速，甚至可能增加上下文判断和审查成本。
+现实证据本身也不适合被简化成一句话。有些受控实验显示，代码助手能显著缩短特定任务完成时间；也有针对熟悉开源仓库的受控研究发现，在 2025 年上半年一组 AI 编程工具下，有经验开发者处理成熟项目任务时未必提速，甚至可能因为提示、等待、审查和上下文判断增加总耗时。
 
 这些结论并不矛盾。它们共同说明的是：AI 是否提高研发效率，不只取决于模型能力，也取决于任务类型、代码库状态、验证手段和组织流程。
 
@@ -194,10 +194,10 @@ AI 研发也需要类似机制。
 
 AI 时代的研发指标，不应该被理解成一个榜单，而应该被理解成一组互相制衡的信号。
 
-速度指标需要质量指标约束。  
-质量指标需要恢复指标约束。  
-恢复指标需要学习指标约束。  
-学习指标需要用户价值约束。
+速度、质量、稳定性、恢复能力、学习能力和用户价值，需要互相校准。  
+速度不能脱离质量和稳定性，质量也不能变成拒绝变化的借口。  
+恢复能力不只是事故后的修补速度，还要反过来推动团队学习。  
+用户价值则要提醒团队：工程系统变快，最终仍然要服务真实问题。
 
 如果只看速度，团队会牺牲质量。  
 如果只看质量，团队可能变得保守。  
@@ -299,6 +299,7 @@ AI Agent 会成为研发团队的一部分。
 - [Nicole Forsgren et al.: The SPACE of Developer Productivity](https://queue.acm.org/detail.cfm?id=3454124)：关于开发者生产力不能被单一活动指标概括。
 - [Abi Noda et al.: DevEx: What Actually Drives Productivity](https://queue.acm.org/detail.cfm?id=3595878)：关于开发者体验、反馈、认知负担和组织环境对生产力的影响。
 - [DORA: DORA Metrics](https://dora.dev/guides/dora-metrics/)、[DORA: Impact of Generative AI in Software Development](https://dora.dev/ai/gen-ai-report/) 与 [DORA 2025 Report](https://dora.dev/research/2025/dora-report/)：关于软件交付表现、稳定性和 AI 采用对组织系统的影响。
-- [E. Peng et al.: The Impact of AI on Developer Productivity: Evidence from GitHub Copilot](https://arxiv.org/abs/2302.06590)：关于受控任务中代码助手对完成时间的影响。
+- [Sida Peng et al.: The Impact of AI on Developer Productivity: Evidence from GitHub Copilot](https://arxiv.org/abs/2302.06590)：关于受控任务中代码助手对完成时间的影响。
+- [Joel Becker et al.: Measuring the Impact of Early-2025 AI on Experienced Open-Source Developer Productivity](https://arxiv.org/abs/2507.09089) 与 [METR: Uplift update](https://metr.org/blog/2026-02-24-uplift-update/)：关于熟悉成熟开源仓库的有经验开发者在真实任务中使用 AI 工具的受控实验，以及后续测量受到工具采用和样本选择影响的说明。
 - [Dario Amodei et al.: Concrete Problems in AI Safety](https://arxiv.org/abs/1606.06565) 与 [DeepMind: Specification gaming](https://deepmind.google/discover/blog/specification-gaming-the-flip-side-of-ai-ingenuity/)：关于目标错配、奖励黑客和规格投机。
 - [Google SRE Workbook: Error Budget Policy](https://sre.google/workbook/error-budget-policy/)：关于用预算机制平衡发布速度和可靠性。
